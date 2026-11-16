@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <title>PA#1</title>
+    <title>PA#2</title>
     <style>
       body {
         background-color: #eeeeee;
@@ -23,6 +23,27 @@
       Drag your mouse on the surface to rotate it.<br />
       (On a touch screen, you can use your finger.)
     </p>
+
+    <div>
+      U:
+      <input
+        type="range"
+        id="uSlider"
+        min="10"
+        max="100"
+        value="60"
+        oninput="updateSurface()"
+      />
+      V:
+      <input
+        type="range"
+        id="vSlider"
+        min="5"
+        max="50"
+        value="20"
+        oninput="updateSurface()"
+      />
+    </div>
 
     <div id="canvas-holder">
       <canvas
